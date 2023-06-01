@@ -51,7 +51,6 @@ carsList.forEach((element) => {
    }
 });
 
-// ? carsList.filter(car =>  car.fuelType !== 'diesel' && car.fuelType !== 'benzina' );
 const otherCars = carsList.filter((car) => {
    if (car.fuelType !== 'diesel' && car.fuelType !== 'benzina'){
       return true;

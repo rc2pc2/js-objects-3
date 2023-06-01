@@ -1,38 +1,32 @@
 /**
-
-Crea un array composto da 15 automobili.
-Ogni oggetto automobile avrà le seguenti proprietà: marca, modello e alimentazione (benzina, diesel, gpl, elettrico, metano).
-
-Dividi le automobili in 3 array separati:
-
-nel primo array solo le auto a benzina,  // ciclo for
-nel secondo solo le auto a diesel,  // ciclo foreach
-nel terzo il resto delle auto.  //array.filter
-
-Infine stampa separatamente i 3 array.
-
+ * A function that generates and returns a simple car object given brand, model and fuel type (as strings)
+ *
+ * @param {string} brand The brand of the car to be created
+ * @param {string} model The model of the car to be created
+ * @param {string} fuelType The fuel type of the car to be created
+ * @returns The car with the details as inserted in the function's arguments
  */
-
-const carModule = (brand, model, fuelType) => {
+const generateCarObject = (brand, model, fuelType) => {
    return { brand, model, fuelType };
 }
 
+
 const carsList = [
-   carModule('Toyota', 'Camry', 'benzina'),
-   carModule('Honda', 'Civic', 'electric'),
-   carModule('Ford', 'Mustang', 'benzina'),
-   carModule('Volkswagen', 'Golf', 'diesel'),
-   carModule('Tesla', 'Model S', 'electric'),
-   carModule('Fiat', 'Punto', 'LPG'),
-   carModule('BMW', 'X5', 'benzina'),
-   carModule('Mercedes', 'C-Class', 'diesel'),
-   carModule('Audi', 'A4', 'benzina'),
-   carModule('Chevrolet', 'Cruze', 'benzina'),
-   carModule('Hyundai', 'Elantra', 'electric'),
-   carModule('Nissan', 'Sentra', 'benzina'),
-   carModule('Kia', 'Sportage', 'benzina'),
-   carModule('Mazda', 'CX-5', 'diesel'),
-   carModule('Subaru', 'Impreza', 'benzina')
+   generateCarObject('Toyota', 'Camry', 'benzina'),
+   generateCarObject('Honda', 'Civic', 'electric'),
+   generateCarObject('Ford', 'Mustang', 'benzina'),
+   generateCarObject('Volkswagen', 'Golf', 'diesel'),
+   generateCarObject('Tesla', 'Model S', 'electric'),
+   generateCarObject('Fiat', 'Punto', 'LPG'),
+   generateCarObject('BMW', 'X5', 'benzina'),
+   generateCarObject('Mercedes', 'C-Class', 'diesel'),
+   generateCarObject('Audi', 'A4', 'benzina'),
+   generateCarObject('Chevrolet', 'Cruze', 'benzina'),
+   generateCarObject('Hyundai', 'Elantra', 'electric'),
+   generateCarObject('Nissan', 'Sentra', 'benzina'),
+   generateCarObject('Kia', 'Sportage', 'benzina'),
+   generateCarObject('Mazda', 'CX-5', 'diesel'),
+   generateCarObject('Subaru', 'Impreza', 'benzina')
 ];
 
 const gasolineCars = [];

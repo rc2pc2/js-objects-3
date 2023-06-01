@@ -13,12 +13,8 @@ Infine stampa separatamente i 3 array.
 
  */
 
-const carModule = (brand, model, poweredBy) => {
-   return {
-         brand: brand,
-         model: model,
-         fuelType : poweredBy,
-   }
+const carModule = (brand, model, fuelType) => {
+   return { brand, model, fuelType };
 }
 
 const carsList = [
